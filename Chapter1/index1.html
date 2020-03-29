@@ -3,12 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Shopping List App</title>
-        <link rel="stylesheet" href="main2.css">
+        <link rel="stylesheet" href="main3.css">
     </head>
     <body>
         <div id="shopping-list">
+            <h1>Hi Vue!</h1>
+            <input type="text" v-model="header">
             <div class="header">
-                <h1>{{ header.toLocaleUpperCase() }}</h1>                
+                <h1>{{ header }}</h1>                
             </div>
             
         <script src="https://unpkg.com/vue"></script>
@@ -17,7 +19,7 @@
                 el: '#shopping-list',
                 data: {
               
-                    header: 'shopping list app',
+                    header: 'Vue is ready to party!',
                 }
             })
         </script>
